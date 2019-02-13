@@ -1,18 +1,68 @@
 <template>
   <div>
-    <readmore
-      :content="content"
-      :height="150"
-      readMore="Read More"
-      readLess="Less"
-    ></readmore>
-    <readmore
-      :content="content"
-      :height="150"
-      readMoreText="Go Deeper"
-      readMoreIcon="play_arrow"
+    <div class="wrapper">
+      <h1>vue-readmore-readless</h1>
+      <readmore
+        :content="content"
+        :height="150"
+        readMore="Read More"
+        readLess="Less"
+      ></readmore>
+      <readmore
+        :content="content"
+        :height="150"
+        readMoreText="Go Deeper"
+        readMoreIcon="play_arrow"
+        showWordCount
+      ></readmore>
+
+      <div class="markdown-body" style="margin-top: 100px;">
+        <h2 id="installation">Installation</h2>
+        <pre><code class="language-bash">$ npm install vue-readmore-readless
+</code></pre>
+        <p>
+          <strong
+            >Install Google Material Design fonts in
+            <code>/public/index.html</code></strong
+          >
+        </p>
+        <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css?family=Material+Icons&quot;/&gt;
+</code></pre>
+        <p>
+          <strong
+            >Install <code>vue-readmore-readless</code> in
+            <code>/src/main.js</code>:</strong
+          >
+        </p>
+        <pre><code>import Readmore from &quot;vue-readmore-readless&quot;;
+Vue.use(Readmore);
+</code></pre>
+        <h2 id="usage-examples">Usage examples:</h2>
+        <pre><code>&lt;readmore
+      :content=&quot;content&quot;
+      :height=&quot;150&quot;
+      readMore=&quot;Read More&quot;
+      readLess=&quot;Less&quot;
+    &gt;&lt;/readmore&gt;
+</code></pre>
+        <pre><code>    &lt;readmore
+      :content=&quot;content&quot;
+      :height=&quot;150&quot;
+      readMoreText=&quot;Go Deeper&quot;
+      readMoreIcon=&quot;play_arrow&quot;
       showWordCount
-    ></readmore>
+    &gt;&lt;/readmore&gt;
+</code></pre>
+        <h2 id="options">Options:</h2>
+        <p>More here...</p>
+        <h2 id="demo">Demo</h2>
+        <p>
+          <a href="https://readmore-readless.netlify.com/"
+            >https://readmore-readless.netlify.com/</a
+          >
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -93,4 +143,23 @@ export default {
   font-weight: 400;
   color: blue;
 } */
+
+h1,
+h2,
+h3 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.wrapper {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
 </style>
