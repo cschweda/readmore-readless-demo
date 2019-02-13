@@ -163,8 +163,8 @@ h3 {
 }
 
 .wrapper {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-bottom: 50px;
 }
 </style>
