@@ -154,7 +154,12 @@ h3 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 60px;
+}
+
+h2,
+h3 {
+  color: #333;
 }
 
 .wrapper {
